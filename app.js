@@ -136,16 +136,16 @@ function question7() {
   }
 }
 
-var userName = getUserName();
-question1();
-question2();
-question3();
-question4();
-question5();
-question6();
-question7();
-
-//This alert greets the user by name and lets them know how many questions out of the total they got correct
-
-alert('Thanks for playing my get-to-know-me game ' + userName + ', you got ' + userCorrectAnswerTotal + ' questions right out of 7.');
-console.log('The user got ' + userCorrectAnswerTotal + ' questions right out of 7.');
+function askUserQuestions() {
+  var userName = getUserName();
+  question1();
+  question2();
+  question3();
+  question4();
+  question5();
+  question6();
+  question7();
+  //This alert greets the user by name and lets them know how many questions out of the total they got correct
+  alert('Thanks for playing my get-to-know-me game ' + userName + ', you got ' + userCorrectAnswerTotal + ' questions right out of 7.');
+  console.log('The user got ' + userCorrectAnswerTotal + ' questions right out of 7.');
+}
