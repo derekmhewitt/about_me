@@ -1,19 +1,20 @@
 body {
   color: black;
-  background: gray;
+  background: #1F3440;
 }
 
 h1 {
-  color: #990000;
+  color: #468AB2;
 }
 
 h2 {
-  color: #990000;
+  color: #B27D34;
 }
 
 header{
   margin: 10px;
-  background: #6699ff;
+  background: #FFC87D;
+  border: 5px solid #468AB2;
   height: 150px;
   padding: 30px;
   border-radius: 50px;
@@ -22,8 +23,9 @@ header{
 section {
   margin: 10px;
   padding: 30px;
+  border: 5px solid #B27D34;
   border-radius: 50px;
-  background: #8585ad;
+  background: #96D8FF;
 }
 
 article {
@@ -31,9 +33,19 @@ article {
 }
 
 img {
-  border: 8px solid #6699ff;
+  border: 5px solid #468AB2;
   width: 25%;
   max-width: 400px;
+  position: relative;
+  margin:30px;
+  border-radius: 50px;
+  float: right;
+}
+
+.unorderedList {
+  background: #FFC87D;
+  padding: 30px;
+  border: 5px solid #468AB2;
   position: relative;
   margin:30px;
   border-radius: 50px;

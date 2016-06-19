@@ -87,7 +87,6 @@ function question5() {
 //Q6: Guess at what age Derek got his first compuer of his own?  Answer: 12.  User gets 4 guesses and the question should respond with "too high" or "too low" to the user's guesses so they can narrow in on the right number.
 function question6() {
   var question6CorrectAnswer = 12;
-  //number of times the user guessed the answer
   var question6GuessCount = 0;
   do {
     question6GuessCount++;
@@ -106,13 +105,12 @@ function question6() {
     }
   }
   while(question6GuessCount < 4);
-  //If the user ran out of guesses, after telling they're prompted above why they were wrong, this prompt informs them they ran out
   if(question6GuessCount >= 5){
     alert('Sorry you\'re out of guesses, you got this question wrong.');
   }
 }
 
-//Q7: This question will ask the user to name one of my Top Six Favorite Sodas, which are the top 6 from my index page.  They get 6 tries to guess the right answer.  At the end, whether they got the answer right or not (maybe two different prompts?) show the user the array.  Number them maybe?
+//Q7: This question will ask the user to name one of my Top Five Favorite Sodas, which are the top 5 from my index page.  They get 6 tries to guess the right answer.
 function question7() {
   var question7GuessCount = 0;
   var q7UserCorrect = false;
@@ -136,6 +134,7 @@ function question7() {
   }
 }
 
+//I added a button to the html on my main page and this functin asks all the above questions so that the page doesn't start prompting you until you boop the booper
 function askUserQuestions() {
   var userName = getUserName();
   question1();
