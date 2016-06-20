@@ -122,6 +122,8 @@ function question7() {
       if(answer7 === question7CorrectAnswers[i].toLowerCase()) {
         q7UserCorrect = true;
         userCorrectAnswerTotal++;
+        //breaks out of the for loop if a match is found
+        break;
       }
     } if(q7UserCorrect === false) {
       alert('Sorry, you guessed wrong. Try again!');
